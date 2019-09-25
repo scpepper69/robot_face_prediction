@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">robot_face_prediction</string>
+    <string name="action_settings">About us</string>
+    <string name="next">next page</string>
+    <string name="infomation">Abount This Application</string>
 </resources>

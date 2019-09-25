@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/colorButtonNormal" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/browser_actions_bg_grey"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detection Classes"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="This application can detect following classes."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• "></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="RX-78-2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• "></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="RX-178"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• "></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="RX-93"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• "></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="MSZ-006"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• "></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="F91"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• "></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="MS-06"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close Me" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
