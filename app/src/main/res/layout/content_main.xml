@@ -8,7 +8,6 @@
     tools:context=".SecondActivity"
     tools:showIn="@layout/activity_second">
 
-
     <LinearLayout
         android:id="@+id/LinerLayout"
         android:layout_width="match_parent"
@@ -46,7 +45,6 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/xxx"
                     android:layout_width="0dp"
                     android:layout_height="10dp"
                     android:layout_weight="1"
@@ -63,14 +61,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Camera" />
+                    android:text="@string/button_camera" />
 
                 <Button
-                    android:id="@+id/image"
+                    android:id="@+id/btnLaunchLibrary"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="image" />
+                    android:text="@string/button_library" />
             </TableRow>
 
             <TableRow
@@ -78,11 +76,11 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btnPrediction"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Predict" />
+                    android:text="@string/button_predict" />
             </TableRow>
 
 
@@ -91,32 +89,13 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/popbutton"
+                    android:id="@+id/btnLaunchInformation"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Pop" />
+                    android:text="@string/button_information" />
             </TableRow>
 
         </TableLayout>
-
     </LinearLayout>
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="bottom|end"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-9871043463037819/4896509434"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LinerLayout"
-        app:layout_constraintVertical_bias="0.5" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

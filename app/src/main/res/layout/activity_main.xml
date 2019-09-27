@@ -36,7 +36,7 @@
         android:layout_height="0dp"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -44,5 +44,30 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/opening" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright © 2019 scpepper All Rights Reserved."
+        android:textColor="@color/colorPopupHeaderText"
+        app:layout_constraintBottom_toBottomOf="@+id/startImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/startImage"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <TextView
+        android:id="@+id/textStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap Screen"
+        android:textColor="@color/colorPopupHeaderText"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/startImage"
+        app:layout_constraintEnd_toEndOf="@+id/startImage"
+        app:layout_constraintStart_toStartOf="@+id/startImage"
+        app:layout_constraintTop_toTopOf="@+id/startImage"
+        app:layout_constraintVertical_bias="0.75" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

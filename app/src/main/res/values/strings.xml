@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">robot_face_prediction</string>
-    <string name="action_settings">About us</string>
-    <string name="next">next page</string>
-    <string name="infomation">Abount This Application</string>
+    <string name="app_name">AI Robot Face Prediction</string>
+    <string name="app_ver">Version 1.0.4</string>
+
+    <string name="blog_url">https://www.scpepper.tokyo</string>
+
+    <!--menu-->
+    <string name="menu_how_to_use">How to Use</string>
+    <string name="menu_about_us">About</string>
+
+    <!--button-->
+    <string name="button_camera">Camera</string>
+    <string name="button_library">Library</string>
+    <string name="button_predict">Detection</string>
+    <string name="button_information">Information</string>
+
+
+    <string name="button_ok">OK</string>
+
 </resources>
